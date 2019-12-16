@@ -19,7 +19,6 @@ from typing import List
 # External Dependencies:
 import numpy as np
 import pandas as pd
-subprocess.call([sys.executable, "-m", "pip", "install", "surprise"])
 import surprise
 
 # For type annotation purposes (for your info) only:

@@ -88,7 +88,7 @@ def input_fn(raw, content_type: str) -> List[InferenceRequest]:
     if content_type == "text/csv":
         stream = StringIO(raw)
         reader = csv.reader(stream)
-        return [InferenceRequest(*datum) for datum in reader]
+        return [InferenceRequest(uid=int(datum[0]), iid=int(datum[1])) for datum in reader]
     elif content_type == "application/json":
         data = json.loads(raw)
         if type(data) == dict:

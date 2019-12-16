@@ -1,6 +1,11 @@
 # OS cruft
 .DS_Store
 
+# Data
+data/
+ml-100k.zip
+results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
